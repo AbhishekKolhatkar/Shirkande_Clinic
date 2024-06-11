@@ -1,0 +1,32 @@
+
+.name-hollow {
+    font-family: 'YourFontFamily', sans-serif; 
+    font-size: 58px; 
+    font-weight: 600;
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #4A6681; 
+    position: relative;
+  }
+  .services-data-left{
+    position: relative;
+    background: white;
+    padding: 50px 0px;
+    border-radius: 25px 0px 0px 25px;
+  }
+  .services-data-right{
+    position: relative;
+    background: white;
+    padding: 50px 0px;
+    border-radius: 0px 25px 25px 0px;
+  }
+  .leaf-wd{
+    width: 300px;
+    position: absolute;
+    left: 0px;
+  }
+  .tooth{
+    width: 300px;
+    position: absolute;
+    right: 0px;
+  }

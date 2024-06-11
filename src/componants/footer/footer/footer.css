@@ -1,0 +1,73 @@
+.footer-section{
+    background-color: #2B4054;
+}
+.footer-section-main{
+    padding: 60px 0px;
+    color: #FFFFFF;
+}
+
+.footer-section-main-list h4{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.footer-section-main-list ul{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.footer-section-main-list ul li{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.email-enter{
+    position: absolute;
+    background-color: #9BD196;
+    border: none;
+    border-radius: 25px;
+    right: 2px;
+    top: 2px;
+    padding: 8px 3px;
+    width: 85px;
+}
+.left-align{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.left-align p{  
+ margin-bottom: 6px;
+}
+.left-align a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.left-align input {
+    position: relative;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    padding: 10px 20px ;
+    width: 100%;
+}
+.left-align input::placeholder {
+    color: #fff;
+}
+.wd{
+    width: 232px;
+}
+.email-container{
+    position: relative;
+}
+.footer-icon-section{
+    display: flex;
+    gap: 20px;
+}
+.footer-icon-section img{
+    cursor: pointer;
+}

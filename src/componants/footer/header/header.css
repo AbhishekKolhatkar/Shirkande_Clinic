@@ -1,0 +1,35 @@
+.head_sec_pro_rect_inner {
+    display: flex;
+    justify-content: space-between;
+   background-color:  #F3FFF2;
+
+}
+.head_sec_pro_rect_inner_menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+.head_sec_pro_rect_inner_logo img{
+    width: 140px;
+}
+.navbar ul{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 0px;
+}
+.navbar ul li{
+  list-style: none;
+  color: black;
+} 
+.navbar ul li a{
+    text-decoration: none;
+    color: #4A6681;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .hamburger-menu{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }

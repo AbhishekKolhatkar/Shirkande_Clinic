@@ -22,6 +22,8 @@ import green_left from "./green_shadow.svg";
 import leaf from "./leaf-left.png";
 import leaf_right from "./leaf-right.png";
 import tooth from "./tooth.png";
+import tool from "./tools.svg";
+import leaf_b from "./leaf_bottom.svg";
  export{
     brand_logo,
     hamburger,
@@ -43,6 +45,8 @@ import tooth from "./tooth.png";
     green_left,
     leaf,
     leaf_right,
-    tooth
+    tooth,
+    tool,
+    leaf_b
 
 }

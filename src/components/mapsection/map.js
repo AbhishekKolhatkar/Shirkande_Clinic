@@ -4,7 +4,7 @@ import './map.css'; // Make sure to create this CSS file for custom styles
 const MapSection = () => {
   return (
     <div className="container margin-auto">
-      <h2>Our Location</h2>
+      <h2 className='heading_main'>Our Location</h2>
       <div className="map-container">
         <iframe
           title="Google Map"

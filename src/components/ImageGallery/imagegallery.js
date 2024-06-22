@@ -34,7 +34,7 @@ const Gallery = () => {
 
   return ( 
     <div className="gallery-section container margin-auto">
-      <h2>Gallery</h2>
+      <h2 className='heading_main'>Gallery</h2>
       <Slider {...settings}>
         <div className="gallery-item">
           <img src={Area1} alt="Waiting Area" />

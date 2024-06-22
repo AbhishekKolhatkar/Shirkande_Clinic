@@ -1,0 +1,61 @@
+
+.name-hollow {
+    font-family: 'YourFontFamily', sans-serif; 
+    font-size: 58px; 
+    font-weight: 600;
+    color: transparent; 
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #4A6681; 
+    position: relative;
+  }
+  .services-data-left {
+    display: flex;
+    position: relative;
+    background: white;
+    padding: 50px 0px;
+    border-radius: 25px 0px 0px 25px;
+    justify-content: space-around;
+}
+
+  .services-data-right{
+    position: relative;
+    display: flex;
+    background: white;
+    padding: 50px 0px;
+    border-radius: 0px 25px 25px 0px;
+    justify-content: space-around;
+  }
+  .leaf-wd{
+    width: 380px !important;
+    position: absolute;
+    left: 0px;
+  }
+  .tooth{
+    width: 300px !important;
+    position: absolute;
+    right: 0px;
+  }
+  .services-data-left h2,.services-data-right h2{
+    
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      text-align: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #D9D9D9;
+      color:#595656;
+      font-size: 12px;
+  
+  }
+  .services-data-left div,.services-data-right div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-data-left p,.services-data-right p{
+    margin-bottom: 0px;
+}

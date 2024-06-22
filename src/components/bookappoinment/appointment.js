@@ -42,7 +42,7 @@ function Appointment(props) {
         </div>
         <section className="container-fluid margin-auto">
       <div className="row">
-        <h3 className='mb-5'>HEADLINE</h3>
+        <h3 className='margin-top-auto'>HEADLINE</h3>
         <div className='col-lg-12'>
            <div className="row appointement-booking">
                 

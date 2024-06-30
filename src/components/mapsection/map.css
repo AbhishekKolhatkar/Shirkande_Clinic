@@ -1,35 +1,34 @@
 .map-section {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'YourFontFamily', sans-serif;
-  }
-  
-  .map-section h2 {
-    font-family: 'YourFontFamily', sans-serif;
-    font-size: 24px;
-    color: #4a5b6a;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .map-container {
-    position: relative;
-    padding: 10px;
-    outline: none;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "YourFontFamily", sans-serif;
+}
+
+.map-section h2 {
+  font-family: "YourFontFamily", sans-serif;
+  font-size: 24px;
+  color: #4a5b6a;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.map-container {
+  position: relative;
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px; /* Adjust height as needed */
+}
+
+@media (max-width: 767px) {
   .map-container iframe {
-    width: 100%;
-    border-radius: 10px;
-    height: 400px; /* Adjust height as needed */
+    height: 300px; /* Adjust height for mobile as needed */
   }
-  
-  @media (max-width: 767px) {
-    .map-container iframe {
-      height: 300px; /* Adjust height for mobile as needed */
-    }
-  }
-  
+}

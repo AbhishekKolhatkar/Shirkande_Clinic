@@ -1,83 +1,83 @@
-.search-container{
-    background-color: #fff;
-    padding: 20px;
-    position: absolute;
-    box-shadow: 0px 5px 10.6px 0px rgba(0, 0, 0, 0.25);
-border-radius: 12px;
-top: 110px;
-    z-index: 1;
-    width: 90%;
+.search-container {
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  box-shadow: 0px 5px 10.6px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  top: 110px;
+  z-index: 1;
+  width: 90%;
 }
-.margin-top-auto{
-    margin-bottom: 80px;
+.margin-top-auto {
+  margin-bottom: 80px;
 }
-.main-search-section{
-    position: relative;
-    display: flex;
-    justify-content: center;
+.main-search-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-.appointement-booking{
-    position: relative;
+.appointement-booking {
+  position: relative;
 }
-    .Book-Appoinment-btn{
-        box-shadow: 0px 8px 10.6px 0px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        border: 1px solid #9BD196;
-        border-radius: 25px;
-        color: #9BD196;
-        font-weight: 500;
-        font-size: 22px;
-        padding: 10px 30px;
-    }
-    .book-container{
-        position: absolute;
-        top:80px;
-    }
-    .select_tag{
-        border: none;
-        padding: 6px;
-    }
-    .select_tag:focus {
-        border: none; /* Ensure no border on focus */
-        outline: none; /* Ensure no outline on focus */
-        box-shadow: none; /* Remove any box-shadow on focus */
-      }
-    .border-line{
-        border-right: 1px solid rgba(204, 204, 204, 1);
-    }
-    .counter-section{
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        background: rgba(43, 64, 84, 0.59);
-        padding: 30px;
-        background-image: url("../../assets/images/swan-ayurveda.jpg");
-    }
-   .counts{
-    text-align: left;
-    width: 220px;
-    background-color: #fff;
-    color: rgba(43, 64, 84, 0.59);
-    border-radius: 25px;
-    padding: 20px 15px 10px 15px;
-   }
-   .counts h6{
-    font-size: 40px;
-    font-weight: 600;
-    color: #4A6681;
-    margin-bottom: 0px;
-   }
-   .counts p{
-    font-size: 18px;
-    font-weight: 600;
-    color: #4A6681;
-    margin-bottom: 0px;
-   }
-   .left-shadow{
-    position: absolute;
-    right: 0;
-   }
-   .right-shadow{
-    position: absolute;
-    left: 0;
-   }
+.Book-Appoinment-btn {
+  box-shadow: 0px 8px 10.6px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid #9bd196;
+  border-radius: 25px;
+  color: #9bd196;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 10px 30px;
+}
+.book-container {
+  position: absolute;
+  top: 30px;
+}
+.select_tag {
+  border: none;
+  padding: 6px;
+}
+.select_tag:focus {
+  border: none; /* Ensure no border on focus */
+  outline: none; /* Ensure no outline on focus */
+  box-shadow: none; /* Remove any box-shadow on focus */
+}
+.border-line {
+  border-right: 1px solid rgba(204, 204, 204, 1);
+}
+.counter-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: rgba(43, 64, 84, 0.59);
+  padding: 30px;
+  background-image: url("../../assets/images/swan-ayurveda.jpg");
+}
+.counts {
+  text-align: left;
+  width: 220px;
+  background-color: #fff;
+  color: rgba(43, 64, 84, 0.59);
+  border-radius: 25px;
+  padding: 20px 15px 10px 15px;
+}
+.counts h6 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #4a6681;
+  margin-bottom: 0px;
+}
+.counts p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a6681;
+  margin-bottom: 0px;
+}
+.left-shadow {
+  position: absolute;
+  right: 0;
+}
+.right-shadow {
+  position: absolute;
+  left: 0;
+}

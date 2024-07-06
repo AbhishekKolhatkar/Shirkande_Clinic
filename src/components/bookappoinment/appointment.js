@@ -19,7 +19,7 @@ function Appointment(props) {
 
   const doctorsByService = {
     Ayurvedic: [
-      { name: "Abhishek", phone: "+916260428773" },
+      { name: "Abhishek", phone: "+916394578952" },
       { name: "Hrushikesh", phone: "+919359625756" },
       // Add more Ayurvedic doctors
     ],

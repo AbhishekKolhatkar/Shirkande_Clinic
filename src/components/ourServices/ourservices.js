@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./ourservice.css";
 import { Modal } from "react-bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { leaf_right, tooth } from "../../assets/images/images";
 
 const services = [
@@ -17,31 +20,21 @@ const services = [
 function Ourservices(props) {
   const [selectedService, setSelectedService] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
-  const [ayurvedaServices, setAyurvedaServices] = useState([]);
-  const [dentalServices, setDentalServices] = useState([]);
 
-  useEffect(() => {
-    setAyurvedaServices(
-      services.filter((service) => service.type === "AYURVEDA")
-    );
-    setDentalServices(services.filter((service) => service.type === "DENTAL"));
-  }, []);
+  const ayurvedaServices = services.filter((service) => service.type === "AYURVEDA");
+  const dentalServices = services.filter((service) => service.type === "DENTAL");
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setAyurvedaServices((prevServices) => shiftServices(prevServices));
-      setDentalServices((prevServices) => shiftServices(prevServices));
-    }, 2000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const shiftServices = (services) => {
-    if (services.length > 0) {
-      const [first, ...rest] = services;
-      return [...rest, first];
-    }
-    return services;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4, // Number of slides to show at a time
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    autoplay: true,
+    autoplaySpeed: 2000,
+    swipeToSlide: true,
+    arrow:false,
+    rtl: false, // Set to true for left-to-right sliding
   };
 
   const handleClick = (service) => {
@@ -70,15 +63,21 @@ function Ourservices(props) {
         <h3 className="mb-5 heading_main">OUR SERVICES</h3>
         <div className="col-lg-6">
           <h6 className="name-hollow text-start">AYURVEDA</h6>
-          <div className="services-data-right">
+          <div className="services-data-left1">
+          <Slider {...settings}>
             {renderServices(ayurvedaServices)}
+          </Slider>
           </div>
+         
         </div>
         <div className="col-lg-6">
           <h6 className="name-hollow text-end">DENTAL</h6>
-          <div className="services-data-left">
+          <div className="services-data-right1">
+          <Slider {...settings}>
             {renderServices(dentalServices)}
+          </Slider>
           </div>
+          
         </div>
       </div>
 

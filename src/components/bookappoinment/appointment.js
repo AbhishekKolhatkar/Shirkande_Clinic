@@ -111,19 +111,20 @@ function Appointment(props) {
               />
             </div>
             <div className="col-lg-2 border-line">
-              <select
-                name="age"
-                id="Age"
-                className="select_tag"
-                value={formData.age}
-                onChange={handleChange}
-              >
-                <option value="">Age</option>
-                {/* Add age options */}
-                <option value="20">20</option>
-                <option value="21">21</option>
-                {/* Add more options as needed */}
-              </select>
+            <select
+  name="age"
+  id="Age"
+  className="select_tag"
+  value={formData.age}
+  onChange={handleChange}
+>
+  <option value="">Age</option>
+  {/* Loop through ages from 1 to 70 and generate options */}
+  {[...Array(70)].map((_, index) => (
+    <option key={index + 1} value={index + 1}>{index + 1}</option>
+  ))}
+</select>
+
             </div>
             <div className="col-lg-2 border-line">
               <input
@@ -162,11 +163,11 @@ function Appointment(props) {
                 </button>
               </div>
               <div className="d-flex justify-content-center">
-                <div className="p-0">
-                  <img src={yoga} alt="yoga" />
+                <div className="p-0 w-50">
+                  <img src={yoga} alt="yoga" className="img-wdt"/>
                 </div>
-                <div className="p-0">
-                  <img src={braces} alt="braces" />
+                <div className="p-0 w-50">
+                  <img src={braces} alt="braces" className="img-wdt"/>
                 </div>
               </div>
               <div className="counter-section">

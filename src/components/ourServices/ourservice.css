@@ -19,13 +19,19 @@
   overflow: hidden;
   /* Ensure icons don't overflow the container */
 }
-
-.services-data-left {
-  border-radius: 0px 25px 25px 0px;
+.services-data-left1,.services-data-right1{
+  position: relative;
+  background: white;
+  padding: 50px 0px;
+  border-radius: 25px;
 }
 
-.services-data-right {
+.services-data-left1 {
   border-radius: 25px 0px 0px 25px;
+}
+
+.services-data-right1{
+  border-radius: 0px 25px 25px 0px;
 }
 
 .leaf-wd {
@@ -41,8 +47,8 @@
 }
 
 .service-icon {
-  width: 100px;
-  height: 100px;
+  width: 100px !important; 
+  height: 100px !important;
   border-radius: 50px;
   text-align: center;
   display: flex;

@@ -19,7 +19,7 @@ function Appointment(props) {
 
   const doctorsByService = {
     Ayurvedic: [
-      { name: "Abhishek", phone: "+916260428773" },
+      { name: "Abhishek", phone: "+916394578952" },
       { name: "Hrushikesh", phone: "+919359625756" },
       // Add more Ayurvedic doctors
     ],
@@ -125,10 +125,6 @@ function Appointment(props) {
                     {index + 1}
                   </option>
                 ))}
-                {/* Add age options */}
-                <option value="20">20</option>
-                <option value="21">21</option>
-                {/* Add more options as needed */}
               </select>
             </div>
             <div className="col-lg-2 border-line">
@@ -168,17 +164,11 @@ function Appointment(props) {
                 </button>
               </div>
               <div className="d-flex justify-content-center">
-
                 <div className="p-0 w-50">
                   <img src={yoga} alt="yoga" className="img-wdt" />
                 </div>
                 <div className="p-0 w-50">
                   <img src={braces} alt="braces" className="img-wdt" />
-                <div className="p-0">
-                  <img src={yoga} alt="yoga" />
-                </div>
-                <div className="p-0">
-                  <img src={braces} alt="braces" />
                 </div>
               </div>
               <div className="counter-section">

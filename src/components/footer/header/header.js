@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../header/header.css"
-import {brand_logo,hamburger} from "../../../assets/images/images"
+import "../header/header.css";
+import {
+  brand_logo,
+  hamburger,
+  close_icon,
+} from "../../../assets/images/images";
 
 const HomeHeader = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
 
   const menuItems = (
     <ul>
       <li>
-        <button className="sign_up_btn_new after_mobile" >
-          Sign Up
-        </button>
+        <button className="sign_up_btn_new after_mobile">Sign Up</button>
       </li>
       <li>
-        <a href="/about-us">About Us</a>
+        <NavLink to="/about-us">About Us</NavLink>
       </li>
       <li>
-        <a href="/features">Features</a>
+        <NavLink to="/features">Features</NavLink>
       </li>
-     
       <li>
-        <a href="/contact-us">Contact Us</a>
+        <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
     </ul>
   );
-
-  // const [activeLink, setActiveLink] = useState(null);
-
-  // const handleLinkClick = (index) => {
-  //     setActiveLink(index);
-  // };
 
   return (
     <>
@@ -68,10 +68,8 @@ const HomeHeader = () => {
                     </ul>
                   </div>
                   <div>
-                    <button
-                      className="hamburger-menu"
-                    >
-                     <img src={hamburger} alt="hamburger_menu"/>
+                    <button className="hamburger-menu" onClick={toggleDrawer}>
+                      <img src={hamburger} alt="hamburger_menu" />
                     </button>
                   </div>
                 </div>
@@ -80,6 +78,20 @@ const HomeHeader = () => {
           </div>
         </div>
       </header>
+
+      {/* Drawer Menu */}
+      <div className={`drawer ${isDrawerOpen ? "open" : ""}`}>
+        <div className="drawer-header">
+          <button className="close-btn" onClick={toggleDrawer}>
+            {/* <img src={close_icon} alt="close_icon" /> */}
+            <p>X</p>
+          </button>
+        </div>
+        <div className="drawer-menu">{menuItems}</div>
+      </div>
+
+      {/* Overlay */}
+      {isDrawerOpen && <div className="overlay" onClick={toggleDrawer}></div>}
     </>
   );
 };

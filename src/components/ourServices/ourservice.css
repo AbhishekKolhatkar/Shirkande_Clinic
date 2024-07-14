@@ -75,3 +75,17 @@
 .services-data-right p {
   margin-bottom: 0px;
 }
+
+@media (max-width:767px) {
+  .tooth {
+    width: 104px !important;
+    bottom: 3px;
+    display: none;
+  }
+
+  .leaf-wd {
+    width: 104px !important;
+  bottom: 3px;
+      display: none;
+  }
+}

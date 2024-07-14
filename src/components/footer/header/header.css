@@ -1,35 +1,118 @@
-.head_sec_pro_rect_inner {
-    display: flex;
-    justify-content: space-between;
-   background-color:  #F3FFF2;
+.head_sec_pro_rect {
 
+  padding: 10px 0;
 }
-.head_sec_pro_rect_inner_menu {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    align-items: center;
+
+.head_sec_pro_rect_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.head_sec_pro_rect_inner_logo img{
-    width: 140px;
+
+.head_sec_pro_rect_inner_logo img {
+  max-height: 100px;
+  max-width: 100%;
 }
-.navbar ul{
-    display: flex;
-    gap: 50px;
-    margin-bottom: 0px;
-}
-.navbar ul li{
+
+.head_sec_pro_rect_inner_menu .navbar ul {
+  display: flex;
+  gap: 20px;
   list-style: none;
-  color: black;
-} 
-.navbar ul li a{
-    text-decoration: none;
-    color: #4A6681;
-    font-size: 20px;
-    font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.head_sec_pro_rect_inner_menu .navbar ul li a {
+  color: #4A6681;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .head_sec_pro_rect_inner_menu .navbar ul {
+    display: none;
   }
-  .hamburger-menu{
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2B4054;
+    color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px 5px;
+  }
+
+  .drawer.open {
+    transform: translateX(0);
+  }
+
+  .drawer-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .drawer-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .drawer-menu ul li {
+    margin: 10px 0;
+  }
+
+  .sign_up_btn_new {
+    border-radius: 50px;
     border: none;
-    background: transparent;
-    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 14px;
   }
+
+  .drawer-menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+}
+
+/* Additional CSS to hide the drawer on larger screens */
+@media (min-width: 769px) {
+  .drawer {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}

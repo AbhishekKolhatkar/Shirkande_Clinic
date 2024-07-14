@@ -88,4 +88,8 @@
   bottom: 3px;
       display: none;
   }
+  .name-hollow {
+    margin-top: 20px;
+    font-size: 22px;
+  }
 }
